@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: utf-8
+  database: web_dev_zhaw_development
+  username: postgres
+  password: 1234asdf
+
+test:
+  adapter: postgresql
+  encoding: utf-8
+  database: web_dev_zhaw_test
+  username: postgres
+  password: 1234asdf
