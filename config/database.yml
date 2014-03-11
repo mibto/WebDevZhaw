@@ -11,3 +11,10 @@ test:
   database: web_dev_zhaw_test
   username: postgres
   password: 1234asdf
+
+production:
+  adapter: postgresql
+  encoding: utf-8
+  database: web_dev_zhaw_production
+  username: postgres
+  password: 1234asdf
