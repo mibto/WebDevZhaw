@@ -4,6 +4,7 @@
 <h2>Your Pragmatic Cart</h2>
 <ul>
 <% @cart.line_items.each do |item| %>
-<li><%= item.product.title %></li>
+<li><span><%= item.product.title %></span> <span><%= number_to_currency_swiss(item.product.price) %></span></li>
 <% end %>
 </ul>
+<span> Total: </span> <%= number_to_currency_swiss(@cart.get_total) %>

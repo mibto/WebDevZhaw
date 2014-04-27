@@ -3166,3 +3166,2658 @@ ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
   Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
   Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
   Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 16:53:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (5.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (1.9ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (1.4ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (56.2ms)
+Completed 200 OK in 138ms (Views: 118.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:18 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:18 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:18 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:18 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:18 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.3ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 16:53:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.8ms)
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 16:53:27 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2014-04-27 14:53:27.030737"], ["updated_at", "2014-04-27 14:53:27.030737"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 2], ["created_at", "2014-04-27 14:53:27.082321"], ["product_id", 5], ["updated_at", "2014-04-27 14:53:27.082321"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 71ms (ActiveRecord: 17.8ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 16:53:27 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mLineItem Load (0.4ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:53:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.6ms)
+
+
+Started POST "/line_items?product_id=4" for 127.0.0.1 at 2014-04-27 16:53:33 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"4"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 2], ["created_at", "2014-04-27 14:53:33.828572"], ["product_id", 4], ["updated_at", "2014-04-27 14:53:33.828572"]]
+  [1m[35m (5.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 12ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 16:53:33 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mLineItem Load (0.3ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 2]]
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered carts/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:53:33 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.4ms)
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 16:53:37 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["cart_id", 2], ["created_at", "2014-04-27 14:53:37.090050"], ["product_id", 5], ["updated_at", "2014-04-27 14:53:37.090050"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 13ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 16:53:37 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:53:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.4ms)
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 16:54:01 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["cart_id", 2], ["created_at", "2014-04-27 14:54:01.971514"], ["product_id", 5], ["updated_at", "2014-04-27 14:54:01.971514"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 12ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 16:54:01 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.3ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:54:02 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.4ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:24 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:25 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:25 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:58:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.4ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.3ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-04-27 16:58:51 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.7ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:14 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:15 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:15 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:15 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:15 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:04:15 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-04-27 17:04:18 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:04:18 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:04:23 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:04:23 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:06:56 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:06:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:04 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:14 +0200
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:07:15 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:07:15 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:08:13 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-04-27 17:08:19 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-04-27 17:08:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc1) lib/active_support/cache/strategy/local_cache.rb:87:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc1) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc1) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/mbrodmann/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms)
+
+
+Started GET "/products/4/edit" for 127.0.0.1 at 2014-04-27 17:08:36 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered products/_form.html.erb (12.1ms)
+  Rendered products/edit.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/products/4" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product"=>{"title"=>"ZHAW WEB DEV TESTS", "description"=>"<p>\r\n\t\t\tRuby is the fastest growing and most exciting dynamic language\r\n\t\t\tout there. If you need to get working programs delivered fast,\r\n\t\t\tyou should add Ruby to your toolbox.\r\n\t\t</p>", "image_url"=>"data:image/jpeg;base64,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", "price"=>"49.95"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProduct Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'ZHAW WEB DEV TESTS' AND "products"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered products/_form.html.erb (7.0ms)
+  Rendered products/edit.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 47ms (Views: 23.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:03 +0200
+
+
+Started PATCH "/products/4" for 127.0.0.1 at 2014-04-27 17:09:43 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product"=>{"title"=>"ZHAW WEB DEV TESTS", "description"=>"<p>\r\n\t\t\tRuby is the fastest growing and most exciting dynamic language\r\n\t\t\tout there. If you need to get working programs delivered fast,\r\n\t\t\tyou should add Ruby to your toolbox.\r\n\t\t</p>", "image_url"=>"https://cdn.tutsplus.com/net/uploads/legacy/966_essentialReading/images/rubylang.png", "price"=>"49.95"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'ZHAW WEB DEV TESTS' AND "products"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "products" SET "description" = $1, "image_url" = $2, "updated_at" = $3 WHERE "products"."id" = 4  [["description", "<p>\r\n\t\t\tRuby is the fastest growing and most exciting dynamic language\r\n\t\t\tout there. If you need to get working programs delivered fast,\r\n\t\t\tyou should add Ruby to your toolbox.\r\n\t\t</p>"], ["image_url", "https://cdn.tutsplus.com/net/uploads/legacy/966_essentialReading/images/rubylang.png"], ["updated_at", "2014-04-27 15:09:43.993830"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:09:44 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-04-27 17:09:48 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/5/edit" for 127.0.0.1 at 2014-04-27 17:09:51 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered products/_form.html.erb (4.0ms)
+  Rendered products/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/products/5" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product"=>{"title"=>"test", "description"=>"test", "image_url"=>"data:image/jpeg;base64,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", "price"=>"99.0"}, "commit"=>"Update Product", "id"=>"5"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProduct Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'test' AND "products"."id" != 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered products/_form.html.erb (3.7ms)
+  Rendered products/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:14 +0200
+
+
+Started PATCH "/products/5" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product"=>{"title"=>"test", "description"=>"test", "image_url"=>"http://mans.de/images/rails.png", "price"=>"99.0"}, "commit"=>"Update Product", "id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProduct Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'test' AND "products"."id" != 5) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "products" SET "image_url" = $1, "updated_at" = $2 WHERE "products"."id" = 5  [["image_url", "http://mans.de/images/rails.png"], ["updated_at", "2014-04-27 15:10:28.439487"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:10:28 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-04-27 17:10:30 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:10:32 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:19:13 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:28:50 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:28:52 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:28:52 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:28:53 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:19 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:20 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:20 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error ("de-CH" is not a valid locale):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__854153567635388571_42126520'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__854153567635388571_42126520'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (1.8ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb___1618420132380155081_25228220'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:32 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb___1618420132380155081_25228220'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:35 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb___1618420132380155081_25228220'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:29:36 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb___1618420132380155081_25228220'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:30:52 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb___1618420132380155081_25228220'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:30:53 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb___1618420132380155081_25228220'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb___1618420132380155081_25228220'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (2.2ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (1.5ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:04 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:05 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:05 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:06 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:06 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:06 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (1.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:13 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:14 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (can not load translations from /home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml: #<Psych::SyntaxError: (/home/mbrodmann/Projects/WebDevZhaw/config/locales/de-CH.yml): found character that cannot start any token while scanning for the next token at line 2 column 1>):
+    10: 				<h3><%= product.title %></h3>
+    11: 				<%= sanitize(product.description) %>
+    12: 				<div class="price_line">
+    13: 					<span class="price"><%= number_to_currency_swiss(product.price) %></span>
+    14: 					<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+    15: 				</div>
+    16: 			</div>
+  app/helpers/store_helper.rb:6:in `number_to_currency_swiss'
+  app/views/store/index.html.erb:13:in `block (3 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:7:in `block (2 levels) in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:6:in `block in _app_views_store_index_html_erb__3515098309163122163_33125800'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3515098309163122163_33125800'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 90ms (Views: 83.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:31:40 +0200
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 17:32:19 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[35mCart Load (0.4ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 2], ["created_at", "2014-04-27 15:32:20.017354"], ["product_id", 5], ["updated_at", "2014-04-27 15:32:20.017354"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 59ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 17:32:20 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 2]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-04-27 17:32:30 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/4/edit" for 127.0.0.1 at 2014-04-27 17:32:32 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered products/_form.html.erb (13.2ms)
+  Rendered products/edit.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/4/edit" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered products/_form.html.erb (17.8ms)
+  Rendered products/edit.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:29 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:33:30 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 17:33:31 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["cart_id", 2], ["created_at", "2014-04-27 15:33:31.727753"], ["product_id", 5], ["updated_at", "2014-04-27 15:33:31.727753"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 24ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 17:33:31 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.3ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:33:54 +0200
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 17:33:57 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 2], ["created_at", "2014-04-27 15:33:58.019989"], ["product_id", 5], ["updated_at", "2014-04-27 15:33:58.019989"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 33ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 17:33:58 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:27 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 17:40:31 +0200
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 17:40:37 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 2], ["created_at", "2014-04-27 15:40:37.743367"], ["product_id", 5], ["updated_at", "2014-04-27 15:40:37.743367"]]
+  [1m[35m (5.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 29ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 17:40:37 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/line_items?product_id=4" for 127.0.0.1 at 2014-04-27 17:40:41 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"4"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["cart_id", 2], ["created_at", "2014-04-27 15:40:41.455659"], ["product_id", 4], ["updated_at", "2014-04-27 15:40:41.455659"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 11ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 17:40:41 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.4ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.5ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered carts/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 18:06:33 +0200
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-27 18:06:34 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lE7tAKdfq7vJ3Ao/SCPpj+oq13EUSA5XFsZ2D8usOPE=", "product_id"=>"5"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["cart_id", 2], ["created_at", "2014-04-27 16:06:34.909425"], ["product_id", 5], ["updated_at", "2014-04-27 16:06:34.909425"]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/2
+Completed 302 Found in 35ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 18:06:34 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.5ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `%' for #<Array:0x00000004479808>):
+     7: <li><span><%= item.product.title %></span> <span><%= number_to_currency_swiss(item.product.price) %></span></li>
+     8: <% end %>
+     9: </ul>
+    10: <span> Total: </span> <% number_to_currency_swiss(@cart.get_total) %>
+  app/helpers/store_helper.rb:3:in `number_to_currency_swiss'
+  app/views/carts/show.html.erb:10:in `_app_views_carts_show_html_erb___611397342257728702_42976240'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 18:07:02 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.5ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `%' for #<Array:0x00000002740890>):
+     7: <li><span><%= item.product.title %></span> <span><%= number_to_currency_swiss(item.product.price) %></span></li>
+     8: <% end %>
+     9: </ul>
+    10: <span> Total: </span> <%= number_to_currency_swiss(@cart.get_total) %>
+  app/helpers/store_helper.rb:3:in `number_to_currency_swiss'
+  app/views/carts/show.html.erb:10:in `_app_views_carts_show_html_erb___611397342257728702_31916880'
+
+
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mbrodmann/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/carts/2" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1[0m  [["cart_id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 44ms (Views: 32.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
