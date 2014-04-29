@@ -5821,3 +5821,115 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +02
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-27 18:08:13 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-29 14:44:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (2.9ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products"   ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 155ms (Views: 134.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-29 14:44:49 +0200
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2014-04-29 14:44:51 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"AxXmCuJz4+qJBXiXh7/a3ERWAkVTw6lbvCQVA3LdsdI=", "product_id"=>"5"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2014-04-29 12:44:51.421191"], ["updated_at", "2014-04-29 12:44:51.421191"]]
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 3], ["created_at", "2014-04-29 12:44:51.481245"], ["product_id", 5], ["updated_at", "2014-04-29 12:44:51.481245"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/3
+Completed 302 Found in 78ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/carts/3" for 127.0.0.1 at 2014-04-29 14:44:51 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 3]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered carts/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/line_items?product_id=4" for 127.0.0.1 at 2014-04-29 14:45:07 +0200
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"AxXmCuJz4+qJBXiXh7/a3ERWAkVTw6lbvCQVA3LdsdI=", "product_id"=>"4"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 3], ["created_at", "2014-04-29 12:45:07.205328"], ["product_id", 4], ["updated_at", "2014-04-29 12:45:07.205328"]]
+  [1m[35m (5.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/3
+Completed 302 Found in 12ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/carts/3" for 127.0.0.1 at 2014-04-29 14:45:07 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mLineItem Load (0.4ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = $1  [["cart_id", 3]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered carts/show.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-29 14:45:53 +0200
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"   ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"   ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.5ms)
