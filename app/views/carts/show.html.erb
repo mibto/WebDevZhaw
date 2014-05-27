@@ -1,10 +1,18 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<h2>Your Pragmatic Cart</h2>
-<ul>
+<h2>Your Cart</h2>
+<table>
 <% @cart.line_items.each do |item| %>
-<li><span><%= item.quantity %> &times;</span><span><%= item.product.title %></span> <span><%= number_to_currency_swiss(item.product.price) %></span></li>
+<tr>
+<td><%= item.quantity %>&times;</td>
+<td><%= item.product.title %></td>
+<td class="item_price"><%= number_to_currency_swiss(item.total_price) %></td>
+</tr>
 <% end %>
-</ul>
-<span> Total: </span> <%= number_to_currency_swiss(@cart.get_total) %>
+<tr class="total_line">
+<td colspan="2">Total</td>
+<td class="total_cell"><%= number_to_currency_swiss(@cart.total_price) %></td>
+</tr>
+</table>
+<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
