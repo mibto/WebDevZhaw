@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pragprog Books Online Store</title>
-<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-<%= csrf_meta_tags %>
+	<title>Pragprog Books Online Store</title>
+	<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body class="<%= controller.controller_name %>">
-<div id="banner">
-<%= image_tag("http://www.ronaldswart.nl/winkelwagenwebshop.jpg") %>
-<%= @page_title || "Awesome Webshop" %>
-</div>
-<div id="columns">
-<div id="side">
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/products">Products</a></li>
-</ul>
-</div>
-<div id="main">
-<%= yield %>
-</div>
-</div>
+	<div id="banner">
+		<%= image_tag("http://www.ronaldswart.nl/winkelwagenwebshop.jpg") %>
+		<%= @page_title || "Awesome Webshop" %>
+	</div>
+	<div id="columns">
+		<div id="side">
+			<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+				<%= render @cart %>
+			<% end %>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/products">Products</a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>
