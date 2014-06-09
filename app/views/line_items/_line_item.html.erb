@@ -3,7 +3,7 @@
   <% else %>
   <tr>
     <% end %>
-    <td><%= item.quantity %>&times;</td>
-    <td><%= item.product.title %></td>
-    <td class="item_price"><%= number_to_currency_swiss(item.total_price) %></td>
+    <td><%= line_item.quantity %>&times;</td>
+    <td><%= line_item.product.title %></td>
+    <td class="item_price"><%= number_to_currency_swiss(line_item.total_price) %></td>
   </tr>
